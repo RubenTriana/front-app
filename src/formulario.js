@@ -14,7 +14,7 @@ const Formulario = () => {
     const { nombre, correo, telefono, mensaje } = form;
     const data = { nombre, correo, telefono, mensaje };
     try {
-      const response = await axios.post("https://back-app-production.up.railway.app", data);
+      const response = await axios.post("https://back-app-production.up.railway.app/api/registrapersona", data);
       console.log(response.data); // Puedes procesar la respuesta como lo necesites.
     } catch (error) {
       console.error(error); // Aquí puedes manejar el error como lo necesites.
